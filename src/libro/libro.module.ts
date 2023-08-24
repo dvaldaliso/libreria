@@ -11,5 +11,8 @@ import { DatabaseModule } from '../database/database.module';
     LibroService,
     ...librosProviders,
   ],
+  exports:[
+    ...librosProviders
+  ]
 })
 export class LibroModule {}
