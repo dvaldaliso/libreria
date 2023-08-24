@@ -1,6 +1,6 @@
 import { IsBoolean, IsString } from 'class-validator';
 
-export class CreateUserDTO {
+export class CreateLibroDTO {
   @IsString()
   nombre: string;
 

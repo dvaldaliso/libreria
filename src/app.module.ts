@@ -3,9 +3,12 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { LibroModule } from './libro/libro.module';
 import { DatabaseModule } from './database/database.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [LibroModule, DatabaseModule],
+  imports: [
+    ConfigModule.forRoot(),
+    LibroModule, DatabaseModule],
   controllers: [AppController],
   providers: [AppService],
 })

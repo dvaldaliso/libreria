@@ -1,6 +1,6 @@
 import { Libro } from './libro.entity';
 
-export const usersProviders = [
+export const librosProviders = [
   {
     provide: 'LIBROS_REPOSITORY',
     useValue: Libro,
