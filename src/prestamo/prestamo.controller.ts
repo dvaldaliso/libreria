@@ -9,7 +9,12 @@ export class PrestamoController {
 
   @Post()
   async create(@Body() createPrestamoDto: CreatePrestamoDto):Promise<string> {
-    return await this.prestamoService.create(createPrestamoDto);
+    try{
+      return await this.prestamoService.create(createPrestamoDto);
+    }catch (error){
+      return `${error}`
+    }
+    
   }
 
  

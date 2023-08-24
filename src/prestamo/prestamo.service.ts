@@ -13,8 +13,8 @@ export class PrestamoService {
     @Inject('PRESTAMO_REPOSITORY')
     private prestamoRepository: typeof Prestamo,
 
-    /*@Inject('LIBRO_REPOSITORY')
-    private libroRepository: typeof Libro,*/
+    @Inject('LIBROS_REPOSITORY')
+    private libroRepository: typeof Libro,
 
    
   ) {}
@@ -22,31 +22,30 @@ export class PrestamoService {
 
   async create(createPrestamoDto: CreatePrestamoDto):Promise<string> {
     //const t = await this.sequelize.transaction()
-    /*const libroPrestado = await this.libroRepository.findOne({
+    const libroPrestado = await this.libroRepository.findOne({
       where: {
         id: createPrestamoDto.libroId,
         estado: 1,
-      },
-      transaction: t,
+      }/*,
+      transaction: t,*/
     });
 
     if (libroPrestado) {
       throw new Error('El libro ya está prestado');
-    }*/
+    }
 
     /*const prestamo = await this.prestamoRepository.create({...createPrestamoDto}, {
       transaction: t,
     });*/
     const prestamo = await this.prestamoRepository.create({...createPrestamoDto});
 
-    /*await this.libroRepository.update({
+    await this.libroRepository.update({
       estado: 1,
     }, {
       where: {
         id: createPrestamoDto.libroId,
-      },
-      transaction: t,
-    });*/
+      }
+    });
 
     // Confirma la transacción
     //await t.commit();
