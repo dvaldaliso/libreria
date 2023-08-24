@@ -1,5 +1,6 @@
 import { Sequelize } from 'sequelize-typescript';
 import { Libro } from '../libro/libro.entity';
+import { Lector } from 'src/lector/entities/lector.entity';
 
 export const databaseProviders = [
   {
@@ -13,7 +14,8 @@ export const databaseProviders = [
         password: process.env.DATABASE_PASSWORD,
         database: process.env.DATABASE_NAME,
       });
-      sequelize.addModels([Libro]);
+      sequelize.addModels([Libro, Lector]);
+      
       await sequelize.sync();
       return sequelize;
     },
