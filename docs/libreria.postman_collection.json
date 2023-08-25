@@ -1,0 +1,348 @@
+{
+	"info": {
+		"_postman_id": "46a20b0d-5029-4f84-a776-b81cec023d8e",
+		"name": "libreria",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11665608"
+	},
+	"item": [
+		{
+			"name": "libro",
+			"item": [
+				{
+					"name": "create libro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"david valdilz\",\n    \"lastName\":\"valdaliso\",\n    \"age\":\"30\",\n    \"address\":\"dvalisio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/create",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/libro/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/libro/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/libro/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nombre\":\"Potter\",\n    \"isbn\":\"4562\",\n    \"estado\":0,\n    \"address\":\"dvalisio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/libro/edit/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"edit",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lector",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"david valdilz\",\n    \"lastName\":\"valdaliso\",\n    \"age\":\"30\",\n    \"address\":\"dvalisio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/create",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/libro/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/libro/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/libro/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"erenesto gonzales\",\n    \"lastName\":\"valdaliso\",\n    \"age\":\"30\",\n    \"address\":\"dvalisio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/libro/edit",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"libro",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prestamo",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"david valdilz\",\n    \"lastName\":\"valdaliso\",\n    \"age\":\"30\",\n    \"address\":\"dvalisio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/prestamo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"prestamo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/prestamo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"prestamo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "detalles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/prestamo/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"prestamo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/prestamo/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"prestamo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\":\"erenesto gonzales\",\n    \"lastName\":\"valdaliso\",\n    \"age\":\"30\",\n    \"address\":\"dvalisio\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/prestamo/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"prestamo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
