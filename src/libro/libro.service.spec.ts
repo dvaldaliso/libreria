@@ -9,7 +9,7 @@ describe('LibroService', () => {
   let libroMock;
 
   beforeEach(async () => {
-    const sequelize = new Sequelize('test', 'devel', 'devel', {
+    sequelize = new Sequelize('test', 'devel', 'devel', {
       host: 'localhost',
       dialect: 'mysql', 
     });
