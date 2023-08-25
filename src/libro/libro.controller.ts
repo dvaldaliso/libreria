@@ -8,17 +8,17 @@ export class LibroController {
     constructor(private libroService: LibroService) {}
     
     @Post('create')
-    public async createUser(@Body() createLibroDto: CreateLibroDTO): Promise<Libro> {
+    public async createLibro(@Body() createLibroDto: CreateLibroDTO): Promise<Libro> {
       return await this.libroService.createLibro(createLibroDto);
     }
 
     @Get('all')
-    public async getUsers(): Promise<Libro[]> {
+    public async getLibros(): Promise<Libro[]> {
       return await this.libroService.getLibros();
     }
 
     @Get('/:libroId')
-    public async getUser(@Param('libroId') libroId: number) {
+    public async getLibro(@Param('libroId') libroId: number) {
       return await this.libroService.getLibro(libroId);
     }
 

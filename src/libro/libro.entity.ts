@@ -1,6 +1,6 @@
 
 import { Table, Column, Model, DataType, HasMany } from 'sequelize-typescript';
-import { Prestamo } from 'src/prestamo/entities/prestamo.entity';
+import { Prestamo } from '../prestamo/entities/prestamo.entity';
 
 @Table
 export class Libro extends Model {

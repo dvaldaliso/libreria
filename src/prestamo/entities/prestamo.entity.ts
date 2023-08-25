@@ -1,6 +1,6 @@
 import { Table, Column, Model, DataType, ForeignKey, BelongsTo, PrimaryKey, Unique } from 'sequelize-typescript';
 import { Lector } from '../../lector/entities/lector.entity';
-import { Libro } from 'src/libro/libro.entity';
+import { Libro } from '../../libro/libro.entity';
 
 @Table
 export class Prestamo extends Model {

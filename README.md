@@ -28,6 +28,9 @@
 ## Base de dato
 docker compose up -d
 
+## Generar Datos de prueba
+npx sequelize-cli db:seed:all
+
 ## Installation
 
 ```bash
