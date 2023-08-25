@@ -25,6 +25,8 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Postman
+Documentacion del api /docs/libreria.postman_collection
 ## Base de dato
 docker compose up -d
 
